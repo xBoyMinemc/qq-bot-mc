@@ -9,7 +9,7 @@ let messageBox = []//韭菜盒子
 
 bot.on("message", function (msg) {
     
-    if (msg.message[0].type !== 'text') return;
+    if (msg.message[0].type !== 'text' || msg.group_id === 指定的群) return;
 
     if (messageBox.length > 9) messageBox.shift()
     messageBox.push([msg.sender.card + String(msg.sender.user_id).slice(-3), msg.message[0].text])
