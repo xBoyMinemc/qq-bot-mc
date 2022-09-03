@@ -5,7 +5,7 @@
 		"description": "§l§e welcome",
 		"uuid": "9facfd38-501c-4d0a-9e9a-f2aaa9ae720d",
 		"version": [ 0, 0, 1],
-		"min_engine_version": [1, 19, 0],
+		"min_engine_version": [1, 19, 20],
 		"pack_scope": "world"
 	},
 	"modules": [
@@ -22,14 +22,14 @@
 			// Minecraft native module - needed to use the "mojang-minecraft" module
 			// "description": "mojang-minecraft",
 			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-			"version": [0, 1, 0]
+			"version": "1.0.0-beta"
 		},
 		{
 			// Bedrock Dedicated Server's module for executing HTTP-based requests.
 			// Cannot be used on Minecraft clients.
 			// "description": "mojang-net",
 			"uuid": "777b1798-13a6-401c-9cba-0cf17e31a81b",
-			"version": [ 0, 1, 0 ]
+			"version": "1.0.0-beta"
 		}
     ],
     "metadata": {
