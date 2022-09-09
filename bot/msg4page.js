@@ -24,7 +24,7 @@ const app = express()
 
 app.get('*', function (req, res) {
 
-    res.writeHead(200, { 'Content-Type': 'text/plain' })
+    res.writeHead(200, { 'Content-Type': 'text/plain' })//重点在于bds的net模块只认这个不带UTF-8；的text/plain，所以重写了一次请求头
     // res.write('Hello World')
     if (req.params[0] === '/') {
         res.write(JSON.stringify({
