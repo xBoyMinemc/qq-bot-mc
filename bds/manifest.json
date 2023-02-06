@@ -4,30 +4,30 @@
 		"name": "§l§echat-bot",
 		"description": "§l§e welcome",
 		"uuid": "9facfd38-501c-4d0a-9e9a-f2aaa9ae720d",
-		"version": [ 0, 0, 1],
-		"min_engine_version": [1, 19, 20],
+		"version": [ 0, 0, 2],
+		"min_engine_version": [1, 19, 50],
 		"pack_scope": "world"
 	},
 	"modules": [
 		{
-			"description": "mmmm",
+			"description": "chat?cheat？chet？",
 			"uuid": "d3c6de1e-45c0-40c2-bb7e-1a3b5fbdd181",
-			"version": [1, 0, 1],
+			"version": [1, 1, 0],
 			"type": "script",
             "entry": "scripts/index.js"
 		}
 	],
     "dependencies": [
 		{
-			// Minecraft native module - needed to use the "mojang-minecraft" module
-			// "description": "mojang-minecraft",
+			// Minecraft native module - needed to use the "@minecraft/server" module
+			// "description": "@minecraft/server",
 			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
-			"version": "1.0.0-beta"
+			"version": "1.1.0-beta"
 		},
 		{
 			// Bedrock Dedicated Server's module for executing HTTP-based requests.
 			// Cannot be used on Minecraft clients.
-			// "description": "mojang-net",
+			// "description": "@minecraft/server-net",
 			"uuid": "777b1798-13a6-401c-9cba-0cf17e31a81b",
 			"version": "1.0.0-beta"
 		}

@@ -1,5 +1,5 @@
-import { world } from 'mojang-minecraft';
-import { http, HttpRequest, HttpRequestMethod } from 'mojang-net';
+import { world } from '@minecraft/server';
+import { http, HttpRequest, HttpRequestMethod } from '@minecraft/server-net';
 const 通讯端口 = 3000;
 const host = 'http://localhost:'+通讯端口;
 
@@ -22,7 +22,7 @@ world.events.tick.subscribe(evd => {
 		if (res.status == 400) return;
 		const body = JSON.parse(res.body);
 		body.r.forEach(element => {
-			world.getDimension('overworld').runCommand(`tellraw @a { "rawtext": [{ "text": "<${element[0]}>${element[1]}" }]}`)
+			world.getDimension('overworld').runCommandAsync(`tellraw @a { "rawtext": [{ "text": "<${element[0]}>${element[1]}" }]}`)
 		});
 		// body.forEach(message => world.getDimension('overworld').runCommand(`tellraw @a { "rawtext": [{ "text": "<${message.name}> (${message.user}) ${message.message}" }]}`));
  	});
